@@ -19,12 +19,21 @@
         <field name="arch" type="xml">
             <form string="Weather City">
                 <sheet>
-                    <div class="oe_title">
-                        <label for="name"/>
-                        <h1>
-                            <field name="name" placeholder="Name..."/>
-                        </h1>
-                    </div>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="Temperaturas">
+                            <field name="temperature_ids">
+                                <tree editable="bottom">
+                                    <field name="date"/>
+                                    <field name="max_temperature"/>
+                                    <field name="min_temperature"/>
+                                    <field name="predicted"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
