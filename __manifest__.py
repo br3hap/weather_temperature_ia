@@ -9,8 +9,9 @@
     'depends': ['base', ],
     "data": [
         "security/ir.model.access.csv",
+        "views/res_config_settings_views.xml",
         "views/weather_city_views.xml",
-        "views/weather_record_views.xml"
+        # "views/weather_record_views.xml"
     ],
     
     'application': True,
