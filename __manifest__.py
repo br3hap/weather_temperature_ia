@@ -6,14 +6,13 @@
     'author': 'Breithner Aquituari',
     'website': '',
     'category': '',
-    'depends': ['base', 'base_setup'],
+    'depends': ['base', 'base_setup', 'mail'],
     "data": [
         "security/ir.model.access.csv",
+        "views/menu_views.xml",
         "views/res_config_settings_views.xml",
         "data/ir_cron.xml",
-        "views/menu_views.xml",
         "views/weather_city_views.xml",
-        # "views/weather_record_views.xml"
     ],
     
     'application': True,

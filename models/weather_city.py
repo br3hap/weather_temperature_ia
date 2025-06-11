@@ -9,6 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class WeatherCity(models.Model):
     _name = 'weather.city'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Ciudad'
 
     name = fields.Char(string='Ciudad', required=True)

@@ -12,7 +12,6 @@ class WeatherRecord(models.Model):
     _name = 'weather.record'
     _description = 'Registro de temperatura por día'
 
-    # name = fields.Char('Name')
     city_id = fields.Many2one('weather.city', string="Ciudad", required=True, ondelete='cascade')
     date = fields.Date(string="Fecha", default=fields.Date.today, required=True)
     max_temperature = fields.Float(string="Temp. Máxima")
