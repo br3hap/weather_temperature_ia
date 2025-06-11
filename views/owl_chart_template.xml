@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_weather_chart_dashboard" model="ir.actions.client">
+        <field name="name">Dashboard Temperatura Chart.js</field>
+        <field name="tag">weather_temperature_ia.chart_dashboard</field>
+    </record>
+
+    <menuitem id="menu_weather_dashboard_chartjs"
+              name="Dashboard Chart.js"
+              parent="weather_temperature_menu_root"
+              sequence="30"
+              action="action_weather_chart_dashboard"/>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="OwlChartRenderer" owl="1">
+        <div class="card text-center">
+            <h2 class="mb-3">Dashboard de Temperaturas</h2>
+            <div class="card-group">
+                <div class="card">
+                    <canvas t-ref="chart"/>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
+
