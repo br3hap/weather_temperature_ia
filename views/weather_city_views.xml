@@ -58,4 +58,12 @@
         </field>
     </record>
 
+    
+    <!-- menuitem -->
+    <menuitem id="weather_temperature_list_menu"
+        name="Temperaturas"
+        action="action_weather_city"
+        sequence="20"
+        parent="weather_temperature_menu_root"/>
+
 </odoo>

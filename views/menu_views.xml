@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="weather_temperature_menu_root"
+              name="Temperatura"
+              web_icon="weather_temperature_ia,static/description/icon.png"
+              sequence="10"
+    />
+
+</odoo>
