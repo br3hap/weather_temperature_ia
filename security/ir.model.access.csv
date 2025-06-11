@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_weather_city_manager,weather_city_manager,model_weather_city,,1,1,1,1
+access_weather_record_manager,weather_record_manager,model_weather_record,,1,1,1,1

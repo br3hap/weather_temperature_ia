@@ -7,8 +7,10 @@
     'website': '',
     'category': '',
     'depends': ['base', ],
-    'data': [
-        
+    "data": [
+        "security/ir.model.access.csv",
+        "views/weather_city_views.xml",
+        "views/weather_record_views.xml"
     ],
     
     'application': True,
