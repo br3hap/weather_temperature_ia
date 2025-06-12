@@ -12,6 +12,10 @@ Dashboard integrando Chart.js
 
 ![alt text](static/img/3.png)
 
+Registro desde un endpoint
+
+![alt text](static/img/4.png)
+
 
 instalar: 
 pip install openai==0.28
