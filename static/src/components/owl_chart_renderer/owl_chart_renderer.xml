@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
   <t t-name="weather_temperature_ia.OwlChartRenderer">
-    <div class="p-4" style="max-width:700px; margin:auto;">
-      <h3 class="mb-4" style="text-align:center;">Dashboard de Temperaturas</h3>
-        <h4 class="mb-4" style="text-align:center; font-size:0.9rem; color:#666;">
-            Datos correspondientes al <t t-esc="state.today"/>
-        </h4>
-      <div style="display:flex; gap:2rem; justify-content:space-around;">
-        <!-- Gráfico de barras -->
-        <div style="flex:1; max-width:300px;">
-          <h4 style="text-align:center; font-size:1rem;">Máx / Mín (Bar)</h4>
-          <canvas t-ref="barChart" width="300" height="300" 
-                  style="display:block; width:100%; height:300px;"/>
+    <div  t-ref="root" class="p-4 dashboard-container">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3>Dashboard de Temperaturas</h3>
+        <button t-on-click="toggleTheme" class="btn-theme-toggle">
+          <t t-esc="state.theme === 'light' ? 'Modo Oscuro' : 'Modo Claro'"/>
+        </button>
+      </div>
+      <h4 class="dashboard-date">
+        Datos correspondientes al <t t-esc="state.today"/>
+      </h4>
+      <div class="charts-wrapper">
+        <div class="chart-item">
+          <h5>Máx / Mín (Bar)</h5>
+          <canvas t-ref="barChart" class="chart-canvas"/>
         </div>
-        <!-- Gráfico tipo pie -->
-        <div style="flex:1; max-width:300px;">
-          <h4 style="text-align:center; font-size:1rem;">Mínimas (Pie)</h4>
-          <canvas t-ref="pieChart" width="300" height="300"
-                  style="display:block; width:100%; height:300px;"/>
+        <div class="chart-item">
+          <h5>Mínimas (Pie)</h5>
+          <canvas t-ref="pieChart" class="chart-canvas"/>
         </div>
       </div>
     </div>
   </t>
 </templates>
+
+
 

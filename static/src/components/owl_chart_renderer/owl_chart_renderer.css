@@ -1,0 +1,46 @@
+/* dashboard-container ya NO es fixed; ocupa todo el ancho bajo el header */
+.dashboard-container {
+    background-color: #121212;   /* fondo negro */
+    color: #eee;                 /* texto claro */
+    width: 100%;
+    min-height: calc(100vh - 3.5rem); /* 100% de la ventana menos header (~56px) */
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: auto;            /* scroll vertical si hace falta */
+  }
+  
+  /* Mantener la cabecera de Odoo visible, sin z-index */
+  .dashboard-container.dark-theme {
+    /* el resto de reglas para modo oscuro */
+  }
+  
+  /* Layout horizontal de los charts */
+  .charts-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  
+  /* Cada item ocupa 45% del ancho disponible */
+  .chart-item {
+    flex: 0 0 45%;
+    max-width: 30%;
+  }
+  
+  /* Canvas ocupa todo su contenedor */
+  .chart-canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Botón y títulos claros */
+  .dashboard-container h3,
+  .dashboard-container h4,
+  .dashboard-container h5,
+  .dashboard-container .btn-theme-toggle {
+    color: #eee !important;
+    background: transparent !important;
+  }
+  
